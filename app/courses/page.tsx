@@ -95,7 +95,7 @@ const Header: React.FC<HeaderProps> = ({ handleBack, course }) => {
         className="flex items-center text-sm font-medium hover:underline"
       >
         <ChevronLeft className="w-4 h-4 mr-1" />
-        Back to Home
+       <p className="lg:block hidden"> Back to Home</p>
       </button>
       {course && <h1 className="text-2xl font-bold">{course.title}</h1>}
     </div>
@@ -491,7 +491,7 @@ const Courses: React.FC = () => {
               {currentMaterial.type === "READING" &&
                 currentMaterial.textContent && (
                   <div className="prose dark:prose-invert max-w-none prose-img:mx-auto prose-img:rounded-xl prose-img:max-w-full">
-                    <ReadingContent content={currentMaterial.textContent} />
+                    <ReadingContent content={currentMaterial.textContent} filename={currentMaterial.title}/>
                   </div>
                 )}
               {currentMaterial.type === "ASSESSMENT" && (
