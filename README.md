@@ -40,4 +40,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 >>>>>>> 76a58de (First commit)
 
 ## AI Features
-Enhance Your Profile and tell your Strengths and Weaknesses and Which topic You have to focus more!
+Enhance Your Profile and share your Strengths and weaknesses, as well as the topic you need to focus on more.
